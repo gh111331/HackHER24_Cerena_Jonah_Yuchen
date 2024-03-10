@@ -8,11 +8,19 @@ export default function Home() {
 				Welcome 
 			</Typography>
 			<Typography variant="body1" gutterBottom>
-				This is sample text. Very cool.
+				If you want to be a volunteer:
 			</Typography>
 			<Link href="/posts" passHref>
 				<Button variant="contained" color="primary">
-					(Does nothing)
+					(View available post)
+				</Button>
+			</Link>
+			<Typography variant="body1" gutterBottom>
+				If you are looking for a volunteer:
+			</Typography>
+			<Link href="/newpost" passHref>
+				<Button variant="contained" color="primary">
+					(post a position)
 				</Button>
 			</Link>
 		</>

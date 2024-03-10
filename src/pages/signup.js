@@ -34,16 +34,24 @@ export default function Signup() {
     return (
         <>
             <Typography variant="h4" gutterBottom style={{ textAlign: 'center' }}>
-                Signup
+                Sign Up
             </Typography>
             <Box
                 component="form"
                 onSubmit={handleSignup}
                 noValidate
-                sx={{ mt: 1 }}
+                
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column', // Align children vertically
+                    // justifyContent: 'center', // Center children vertically in container
+                    alignItems: 'center', // Center children horizontally in container
+                    height: '100vh', // Take full height of the viewport
+                    mt: 1
+                }}
             >
                 <TextField
-                    style={{ position: 'absolute', top: '150px', left: '300px', width: '300px' }}
+                    style={{ width: '300px' }}
                     margin="normal"
                     required
                     id="username"
@@ -55,7 +63,7 @@ export default function Signup() {
                     onChange={(e) => setUsername(e.target.value)}
                 />
                 <TextField
-                    style={{ position: 'absolute', top: '225px', left: '300px', width: '300px' }}
+                    style={{width: '300px' }}
                     margin="normal"
                     required
                     id="email"
@@ -67,7 +75,7 @@ export default function Signup() {
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <TextField
-                    style={{ position: 'absolute', top: '295px', left: '300px', width: '300px' }}
+                    style={{width: '300px' }}
                     margin="normal"
                     required
                     name="password"
@@ -82,7 +90,7 @@ export default function Signup() {
                     type="submit"
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
-                    style={{ position: 'absolute', top: '370px', left: '320px', width: '250px' }}
+                    style={{width: '250px' }}
                 >
                     
                     Sign Up

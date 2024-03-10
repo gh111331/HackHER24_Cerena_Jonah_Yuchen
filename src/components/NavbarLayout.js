@@ -11,9 +11,16 @@ export default function NavbarLayout({ children }) {
         <Box sx={{ flexGrow: 1, margin: 0 }}>
             <AppBar position="sticky">
                 <Toolbar>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Whatever we name it
-                    </Typography>
+                    <Link href="/" passHref> 
+                        <Box sx={ {'&:hover button': { visibility: 'visible' } }}>
+                            <Button variant="text" color="inherit" style={{ visibility: 'visible', textTransform: 'none' }} sx ={{
+                                fontSize: '20px', color: 'black'
+                            }}>
+                                Put NAME here
+                            </Button>
+                        </Box>
+                    </Link>
+                    <Box sx={{ flexGrow: 1 }} />
                     <Link href="/signup" passHref>
                         <Button variant="contained" color="inherit">Register</Button>
                     </Link>

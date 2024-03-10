@@ -20,7 +20,13 @@ export default function NavbarLayout({ children }) {
                             </Button>
                         </Box>
                     </Link>
+
                     <Box sx={{ flexGrow: 1 }} />
+
+                    <Link href="/aboutus" passHref>
+                        <Button variant="contained" color="inherit">About Us</Button>
+                    </Link>            
+
                     <Link href="/signup" passHref>
                         <Button variant="contained" color="inherit">Register</Button>
                     </Link>

@@ -25,7 +25,7 @@ export default function Signup() {
 
     return (
         <>
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h4" gutterBottom style={{ textAlign: 'center' }}>
                 Signup
             </Typography>
             <Box
@@ -35,6 +35,8 @@ export default function Signup() {
                 sx={{ mt: 1 }}
             >
                 <TextField
+                    style={{ position: 'absolute', top: '150px', left: '300px', width: '300px' }}
+
                     margin="normal"
                     required
                     fullWidth
@@ -47,9 +49,10 @@ export default function Signup() {
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <TextField
+                    style={{ position: 'absolute', top: '225px', left: '300px', width: '300px' }}
                     margin="normal"
                     required
-                    fullWidth
+                    
                     name="password"
                     label="Password"
                     type="password"
@@ -63,8 +66,11 @@ export default function Signup() {
                     fullWidth
                     variant="contained"
                     sx={{ mt: 3, mb: 2 }}
+                    style={{ position: 'absolute', top: '300px', left: '320px', width: '250px' }}
                 >
+                    
                     Sign Up
+                    
                 </Button>
             </Box>
         </>
